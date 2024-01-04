@@ -5,10 +5,17 @@ internal class LinqFilter
 {
     public static void FiltrarGeneros(List<Musica> musicas)
     {
-        var todosGeneros = musicas.Select(generos => generos.Genero).Distinct().ToList();
-        foreach (var genero in todosGeneros)
+        try 
         {
-            Console.WriteLine($"- {genero}");
+            var retornaMusicas = musicas.Select(genero => genero.Genero).Distinct().ToList();
+            foreach (var item in retornaMusicas)
+            {
+                Console.WriteLine($"{item}");
+            }
+        }
+        catch(Exception ex)
+        {
+            Console.WriteLine(ex.Message);
         }
     }
 }
