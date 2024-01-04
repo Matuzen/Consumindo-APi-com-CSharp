@@ -6,9 +6,8 @@ using (HttpClient client = new())
     try
     {
         var resposta = await client.GetStringAsync("https://guilhermeonrails.github.io/api-csharp-songs/songs.json");
-        Console.WriteLine(resposta);
         var musicas = JsonSerializer.Deserialize<List<Musica>>(resposta)!;
-        musicas[19989].ExibirDetalhesDaMusica();
+        musicas[0].ExibirDetalhesDaMusica();
     }
     catch (Exception ex)
     {
