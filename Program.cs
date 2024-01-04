@@ -9,7 +9,8 @@ using (HttpClient client = new())
         var resposta = await client.GetStringAsync("https://guilhermeonrails.github.io/api-csharp-songs/songs.json");
         var musicas = JsonSerializer.Deserialize<List<Musica>>(resposta)!;
         //LinqFilter.FiltrarGeneros(musicas);
-        LinqOrder.ArtistasOrdenados(musicas);
+        //LinqOrder.ArtistasOrdenados(musicas);
+        LinqFilter.FiltrarArtistasPorGeneroMusical(musicas, "rock");
     }
     catch (Exception ex)
     {
