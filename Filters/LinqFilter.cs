@@ -1,6 +1,5 @@
 ﻿using ScreenSound_04.Models;
 
-
 namespace ScreenSound_04.Filters;
 internal class LinqFilter
 {
@@ -26,7 +25,8 @@ internal class LinqFilter
         {
             // Filtrar todas as músicas onde o gênero seja igual ao gênero que recebeu como parâmetro
             // Da nossa lista de musicas, eu quero todas as musica onde o genero é igual musica.genero
-            var filtrarArtistas = musicas.Where(musica => musica.Genero!
+            var filtrarArtistas = musicas
+                .Where(musica => musica.Genero!
                 .Contains(genero))
                 .Select(musica => musica.Artista)
                 .Distinct()
@@ -39,6 +39,25 @@ internal class LinqFilter
             }
         }
         catch (Exception ex) 
+        {
+            Console.WriteLine("Algo deu errado" + ex.Message);
+        }
+    }
+    public static void FiltrarMusicasDeUmArtista(List<Musica> musicas, string nomeArtista)
+    {
+        try
+        {
+            // Sempre que você quiser pegar o subconjunto de uma lista, use o Where
+            var musicasFiltradas = musicas.Where(musica => musica.Artista!
+            .Equals(nomeArtista))
+            .ToList();
+            Console.WriteLine(nomeArtista);
+            foreach (var musica in musicasFiltradas)
+            { 
+                Console.WriteLine($"-{musica.Nome}");
+            }
+        }
+        catch (Exception ex)
         {
             Console.WriteLine("Algo deu errado" + ex.Message);
         }
