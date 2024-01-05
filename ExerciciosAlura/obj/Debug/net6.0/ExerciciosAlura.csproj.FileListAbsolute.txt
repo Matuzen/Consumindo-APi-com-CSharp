@@ -1,0 +1,14 @@
+C:\dev\ExerciciosAlura\obj\Debug\net6.0\ExerciciosAlura.GeneratedMSBuildEditorConfig.editorconfig
+C:\dev\ExerciciosAlura\obj\Debug\net6.0\ExerciciosAlura.AssemblyInfoInputs.cache
+C:\dev\ExerciciosAlura\obj\Debug\net6.0\ExerciciosAlura.AssemblyInfo.cs
+C:\dev\ExerciciosAlura\obj\Debug\net6.0\ExerciciosAlura.csproj.CoreCompileInputs.cache
+C:\dev\ExerciciosAlura\bin\Debug\net6.0\ExerciciosAlura.exe
+C:\dev\ExerciciosAlura\bin\Debug\net6.0\ExerciciosAlura.deps.json
+C:\dev\ExerciciosAlura\bin\Debug\net6.0\ExerciciosAlura.runtimeconfig.json
+C:\dev\ExerciciosAlura\bin\Debug\net6.0\ExerciciosAlura.dll
+C:\dev\ExerciciosAlura\bin\Debug\net6.0\ExerciciosAlura.pdb
+C:\dev\ExerciciosAlura\obj\Debug\net6.0\ExerciciosAlura.dll
+C:\dev\ExerciciosAlura\obj\Debug\net6.0\refint\ExerciciosAlura.dll
+C:\dev\ExerciciosAlura\obj\Debug\net6.0\ExerciciosAlura.pdb
+C:\dev\ExerciciosAlura\obj\Debug\net6.0\ExerciciosAlura.genruntimeconfig.cache
+C:\dev\ExerciciosAlura\obj\Debug\net6.0\ref\ExerciciosAlura.dll
