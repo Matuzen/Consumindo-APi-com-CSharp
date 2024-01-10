@@ -62,4 +62,20 @@ internal class LinqFilter
             Console.WriteLine("Algo deu errado" + ex.Message);
         }
     }
+
+    public static void ExibirMusicasEmCSharp(List<Musica> musicas)
+    {
+        var musicasFiltradas = musicas
+            .Where(musica => musica.Tonalidade.Equals ("C#"))
+            .Select(musica => musica.Nome)
+            .ToList();
+
+        Console.WriteLine("Músicas com C#");
+
+        foreach (var item in musicasFiltradas)
+        {
+            Console.WriteLine($"{item}");
+        }
+    }
+
 }
